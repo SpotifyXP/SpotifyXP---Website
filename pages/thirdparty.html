@@ -1,54 +1,22 @@
-<div style="position:absolute;left:2vw;font-size:16px">
-    <br>
-    <h3>Dependencies</h3>
-    <br>
-    librespot-java
-    <br>
-    commons-io:commons-io
-    <br>
-    org.json:json
-    <br>
-    commons-httpclient:commons-httpclient
-    <br>
-    lc.kra.system:system-hook
-    <br>
-    com.formdev:flatlaf
-    <br>
-    com.jtattoo:JTattoo
-    <br>
-    com.electronwill.night-config:toml
-    <br>
-    com.lmax:disruptor
-    <br>
-    xyz.gianlu.zeroconf:zeroconf
-    <br>
-    com.squareup.okhttp3:okhttp
-    <br>
-    commons-net:commons-net
-    <br>
-    org.jcraft:jorbis
-    <br>
-    com.google.protobuf:protobuf-java
-    <br>
-    com.google.code.gson:gson
-    <br>
-    com.neovisionaries:nv-i18n
-    <br>
-    com.fasterxml.jackson.core:jackson-databind
-    <br>
-    org.apache.httpcomponents.core5:httpcore5
-    <br>
-    org.apache.httpcomponents.client5:httpclient5
-    <br>
-    org.apache.httpcomponents.client5:httpclient5-cache
-    <br>
-    org.slf4j:slf4j-api
-    <br>
-    org.jetbrains:annotations
-    <br>
-    uk.co.caprica:vlcj
-    <br>
-    com.googlecode.plist:dd-plist
-    <br>
-    org.apache.commons:commons-math3
+<div id="thirdparty" style="position:absolute;left:2vw;font-size:10px">
 </div>
+<style>
+    h1 {
+        text-align: center;
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 3vw;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+</style>
+<script class="initScript">
+    var depreq = new XMLHttpRequest();
+    depreq.onloadend = function () {
+        document.getElementById("thirdparty").innerHTML = depreq.responseText.split("<br><br>")[0];
+    }
+    depreq.open("GET", "https://raw.githubusercontent.com/SpotifyXP/SpotifyXP/main/src/main/resources/setup/thirdparty.html")
+    depreq.send();
+</script>

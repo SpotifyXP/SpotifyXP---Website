@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="css/global.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/98.css" />
-        <title>SpotifyXP</title>
-        <script src="scripts/content.js"></script>
-    </head>
-    <body onload="loadContent();loadPageName('home')">
-        <div id="header"></div>
-        <div id="content">
-            <div class="window" style="width: 100vw;height:100vh">
-                <div class="title-bar">
-                  <div class="title-bar-text">SpotifyXP Listen to Spotify on Windows XP</div>
-                  <div class="title-bar-controls">
-                    <button onclick="window.location.href='about:blank'" aria-label="Close"></button>
-                  </div>
-                </div>
-                <div class="window-body" >
-                  <div id="position:absolute;left:0px">
-                    <ul style="font-size:15px;float:left;margin-right:78vw;width:20vw;height:94vh" class="tree-view">
-                        <li>Contents
-                            <ul>
-                                <li onclick="loadPage(this)" id="clickable">Home</li>
-                                <li onclick="loadPage(this)" id="clickable">Download</li>
-                                <li onclick="loadPage(this)" id="clickable">Thirdparty</li>
-                                <li onclick="loadPage(this)" id="clickable">Special Thanks</li>
-                            <ul>
-                        </li>
-                      </ul>
-                  </div>
-                  <div id="right" style="overflow:scroll;background-color:white;width:75vw;height:95vh;position:absolute;right:1vw">
-                  
-                  </div>
-                </div>
-              </div>
+<head>
+    <link href="css/global.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/98.css" />
+    <title>SpotifyXP</title>
+    <link rel="icon" href="img/spotifyxp.png">
+    <script src="scripts/content.js"></script>
+</head>
+<body onload="loadContent();loadPageName('home')">
+<div id="header"></div>
+<div id="content">
+    <div class="window" style="width: 100vw;height:100vh">
+        <div class="title-bar">
+            <div class="title-bar-text">SpotifyXP Listen to Spotify on Windows XP</div>
+            <div class="title-bar-controls">
+                <button onclick="window.location.href='about:blank'" aria-label="Close"></button>
+            </div>
         </div>
-        <div id="footer"></div>
-    </body>
+        <div class="window-body" >
+            <div id="position:absolute;left:0px">
+                <ul style="font-size:15px;float:left;margin-right:78vw;width:20vw;height:94vh" class="tree-view">
+                    <li>Contents
+                        <ul>
+                            <li onclick="loadPage(this)" id="clickable">Home</li>
+                            <li onclick="loadPage(this)" id="clickable">Download</li>
+                            <li onclick="loadPage(this)" id="clickable">Thirdparty</li>
+                            <li onclick="loadPage(this)" id="clickable">Special Thanks</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="right" style="overflow:scroll;background-color:white;width:75vw;height:95vh;position:absolute;right:1vw">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
 </html>
